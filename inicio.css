@@ -1,0 +1,20 @@
+:root{
+  --bg:#041124;
+  --panel:#071028;
+  --accent:#4ade80;
+  --muted:#9aa4b2;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial}
+body{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#021021,#041124);color:#e6eef8;padding:18px}
+.wrap{width:100%;max-width:560px;padding:18px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+h1{font-size:20px;margin:0}
+.hud{display:flex;gap:12px;font-weight:700}
+.game-area{display:flex;justify-content:center}
+canvas{background:linear-gradient(180deg,#091427,#092033);border-radius:8px;border:4px solid rgba(255,255,255,0.03);max-width:100%;height:auto}
+.controls{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:12px;flex-wrap:wrap}
+.controls button{background:var(--accent);border:0;padding:8px 12px;border-radius:8px;color:#02210b;font-weight:800;cursor:pointer}
+.controls input[type=range]{width:140px}
+.hint{text-align:center;color:var(--muted);font-size:13px;margin-top:10px}
+@media (max-width:420px){ .controls{gap:6px} }

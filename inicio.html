@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jogo da Cobrinha</title>
+  <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Jogo da Cobrinha</h1>
+      <div class="hud">
+        <div>Placar: <span id="score">0</span></div>
+        <div>Melhor: <span id="best">0</span></div>
+      </div>
+    </header>
+
+    <section class="game-area">
+      <canvas id="gameCanvas" width="480" height="480" aria-label="Área de jogo"></canvas>
+    </section>
+
+    <footer class="controls">
+      <button id="startBtn">Iniciar</button>
+      <button id="pauseBtn">Pausar</button>
+      <label for="speed">Velocidade</label>
+      <input id="speed" type="range" min="5" max="18" value="10">
+      <button id="resetBtn">Resetar</button>
+    </footer>
+
+    <p class="hint">Use setas / WASD. No celular, deslize para controlar. Espaço pausa/inicia.</p>
+  </main>
+
+  <script src="inicio.js"></script>
+</body>
+</html>
